@@ -185,10 +185,13 @@
 			<a href="#" style="word-spacing:normal;">ссылка 1</a>
 		</div>
 		<div id="footerText">
-			Какой-то текст тут 
+			Tutorials World is optimized for learning, testing, and training.
+			Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. 
+			While using this site, you agree to have read and accepted our terms of use, cookie and privacy policy.
 			<!--<a href="/about/about_copyright.asp">terms of use</a>,
 	 		<a href="/about/about_privacy.asp">cookie and privacy policy</a>. -->
-			<a href="/about/about_copyright.asp">Copyright 2014</a> by KaVaBUnGO. All Rights Reserved.<br><br>
+	 		<br>
+			<a href="/about/about_copyright.asp">Copyright 2014-2015</a> Tutorials World. All Rights Reserved.<br><br>
 		</div>
 	</div>
 

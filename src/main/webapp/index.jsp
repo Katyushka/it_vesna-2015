@@ -50,68 +50,68 @@
 				</a>
 			</div>
 			<div class="tutbuttons">
-				<a class="btn" href="#" target="_top">Java  Tutorial</a>
-				<a class="btn" href="#" target="_top">Java остальное</a>
+				<a class="btn" href="#" target="_top">Java Tutorial</a>
+				<a class="btn" href="#" target="_top">Java Quizzes</a>
 			</div>
 		</div>
 		<div class="box1">
 			<div class="tutlogo">
 				<a class="box" href="№" target="_top">		
 					<div class="image" style="background-color:#07B3D3;"></div>
-					<h1>Кат 1</h1>
+					<h1>SQL</h1>
 				</a>
 			</div>
 			<div class="tutbuttons">
-				<a class="btn" href="#" target="_top">текст</a>
-				<a class="btn" href="#" target="_top">текст</a>			
+				<a class="btn" href="#" target="_top">SQL Tutorial</a>
+				<a class="btn" href="#" target="_top">SQL Quizzes</a>			
 			</div>
 		</div>
 		<div class="box1">
 			<div class="tutlogo">
 				<a class="box" href="#" target="_top">		
 					<div class="image" style="background-color:#555555;"></div>
-					<h1>Кат 1</h1>
+					<h1>JavaScript</h1>
 				</a>
 			</div>
 			<div class="tutbuttons">
-				<a class="btn" href="#" target="_top">текст</a>
-				<a class="btn" href="#" target="_top">текст</a>			
+				<a class="btn" href="#" target="_top">JavaScript Tutorial</a>
+				<a class="btn" href="#" target="_top">JavaScript Quizzes</a>			
 			</div>
 		</div>		
 		<div class="box1">
 			<div class="tutlogo">
-				<a class="box" href="sql/default.asp" target="_top">		
+				<a class="box" href="#" target="_top">		
 					<div class="image" style="background-color:#FF9900;"></div>
-					<h1>Кат 1</h1>
+					<h1>HTML5</h1>
 				</a>
 			</div>
 			<div class="tutbuttons">
-				<a class="btn" href="#" target="_top">текст</a>
-				<a class="btn" href="#" target="_top">текст</a>			
+				<a class="btn" href="#" target="_top">HTML5 Tutorial</a>
+				<a class="btn" href="#" target="_top">HTML5 Quizzes</a>			
 			</div>
 		</div>
 		<div class="box1">
 			<div class="tutlogo">
 				<a class="box" href="#" target="_top">		
 					<div class="image" style="background-color:#41BC81;"></div>
-					<h1>Кат 1</h1>
+					<h1>CSS</h1>
 				</a>
 			</div>
 			<div class="tutbuttons">
-				<a class="btn" href="#" target="_top">текст</a>
-				<a class="btn" href="#" target="_top">текст</a>			
+				<a class="btn" href="#" target="_top">CSS Tutorial</a>
+				<a class="btn" href="#" target="_top">CSS Quizzes</a>			
 			</div>
 		</div>
 		<div class="box1">
 			<div class="tutlogo">
 				<a class="box" href="#" target="_top">		
 					<div class="image" style="background-color:#6A8CE9;"></div>
-					<h1>Кат 1</h1>
+					<h1>AJAX</h1>
 				</a>
 			</div>
 			<div class="tutbuttons">
-				<a class="btn" href="#" target="_top">текст</a>
-				<a class="btn" href="#" target="_top">текст</a>			
+				<a class="btn" href="#" target="_top">AJAX Tutorial</a>
+				<a class="btn" href="#" target="_top">AJAX Quizzes</a>			
 			</div>
 		</div>
 		<div style="clear:both;"></div>
