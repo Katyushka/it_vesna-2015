@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - tw@localhost" uuid="9061f400-72e5-4f92-907f-e3a064e64a02">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>tw.*</schema-pattern>
+      <default-schemas>tw.*</default-schemas>
+    </data-source>
+  </component>
+</project>
