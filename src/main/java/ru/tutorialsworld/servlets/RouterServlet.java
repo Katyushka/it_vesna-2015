@@ -31,9 +31,10 @@ public class RouterServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
-		String parameter = request.getParameter("id");
-		request.setAttribute("id", parameter);
-		
+		String id = request.getParameter("id");
+		String articleId = request.getParameter("articleId");
+		request.setAttribute("id", id);
+		request.setAttribute("articleId", articleId);
 		request.getRequestDispatcher("/article.jsp").forward(request, response);
 	}
 

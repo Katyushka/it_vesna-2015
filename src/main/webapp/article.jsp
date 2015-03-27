@@ -10,8 +10,14 @@
 	CategoryModel categoryModel = new CategoryModel();
 	ArticleModel articleModel = new ArticleModel();
 	List<Category> topLevelCategories = categoryModel.getTopLevelCategories();
-	//Category category = categoryModel.getCategoryByName
-	
+	int categoryId = Integer.valueOf((String)request.getAttribute("id"));
+	Category category = categoryModel.getCategoryById(categoryId); 
+	String currentArticleId = (String)request.getAttribute("articleId");
+	if (currentArticleId==null){
+		currentArticleId="4";
+	}
+
+	Article currentArticle = articleModel.getArticleById(Integer.valueOf(currentArticleId));
 %>
 <!DOCTYPE html>
 <html lang="ru">
@@ -52,11 +58,12 @@
 				<div id='leftcolumn'>
 					
 					<% 
-					List<Category> subcategories = categoryModel.getCategoriesByLevel(2);
+					List<Category> subcategories = categoryModel.getSubcategories(category);
 					for (Category subcategory : subcategories) { %>
 					<h2 class="left"><span class="left_h2"><%= subcategory.getFullName()%></span></h2>
-					<% for (Article article : articleModel.getAllArticles()){ %>
-					<a target="_top" href="article?id=<%=subcategory.getFullName() %>" class=""><%= article.getTitle() %></a>
+					<% for (Article article : articleModel.getArticlesByCategory(subcategory)){ %>
+					<a target="_top" href="article?id=<%=categoryId%>&articleId=<%= article.getId() %>" class="">
+						<%= article.getTitle() %></a>
 					
 					<% }} %>				
 					
@@ -66,28 +73,14 @@
 			<div id='main'>
 				<div id='mainLeaderboard'>
 				</div>
-				<h1><%=(String)request.getAttribute("id")%></h1>
+				<h1><%=currentArticle.getTitle()%></h1>
 				<div class="chapter">
 					<div class="prev"><a class="chapter" href="#">&laquo; предыдущая</a></div>
 					<div class="next"><a class="chapter" href="#">следующая &raquo;</a></div>
 				</div>
 				<br>
 				<div class="content">
-					
-					
-					
-					
-					
-					
-					Тут текст статьи
-					Тут текст статьи
-					Тут текст статьи
-					Тут текст статьи
-					Тут текст статьи
-					Тут текст статьи
-
-					Тут текст статьи
-					Тут текст статьи
+					<%=currentArticle.getContent()%>
 				</div>
 				<br>
 				<div class="chapter">

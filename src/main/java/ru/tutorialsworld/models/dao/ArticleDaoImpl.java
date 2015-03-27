@@ -72,9 +72,32 @@ public class ArticleDaoImpl implements ArticleDao {
 
     @Override
     public List<Article> getArticlesByCategory(int category) {
-        // TODO Auto-generated method stub
-        return null;
+        List<Article> articles = new ArrayList<Article>();
+        try {
+            String query = "SELECT * FROM articles WHERE categoryId = ?";
+            PreparedStatement pstmt = getConnection().prepareStatement(query);
+            pstmt.setInt(1, category);
+            ResultSet rs = pstmt.executeQuery();
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                String title = rs.getString("title");
+                String url = rs.getString("url");
+                Date createDate = new Date(rs.getDate("createDate").getTime());
+                Date modifiedDate = new Date(rs.getDate("modifiedDate")
+                        .getTime());
+                String userName = rs.getString("userName");
+                int categoryId = rs.getInt("categoryId");
+                String content = rs.getString("content");
+                Article article = new Article(id, title, url, createDate,
+                        modifiedDate, userName, categoryId, content);
+                articles.add(article);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return articles;
     }
+    
 
     @Override
     public Article createArticle(String title, String url, String userName,

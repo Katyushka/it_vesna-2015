@@ -5,6 +5,7 @@ import java.util.List;
 import ru.tutorialsworld.models.dao.ArticleDao;
 import ru.tutorialsworld.models.dao.ArticleDaoImpl;
 import ru.tutorialsworld.models.entities.Article;
+import ru.tutorialsworld.models.entities.Category;
 
 public class ArticleModel {
 	public static Article createArticle(String title, String url,
@@ -18,6 +19,12 @@ public class ArticleModel {
 	public static List<Article> getAllArticles() {
 		ArticleDao articleDao = new ArticleDaoImpl();
 		List<Article> articles = articleDao.getAllArticles();
+		return articles;
+	}
+	
+	public static List<Article> getArticlesByCategory(Category category){
+		ArticleDao articleDao = new ArticleDaoImpl();
+		List<Article> articles = articleDao.getArticlesByCategory(category.getId());
 		return articles;
 	}
 

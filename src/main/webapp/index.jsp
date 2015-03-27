@@ -37,7 +37,7 @@
 		<% 
 		List<Category> subcategories = categoryModel.getSubcategories(topLevelCategory);
 		for (Category subcategory : subcategories) { %>
-		<a href="article?id=<%=subcategory.getName() %>" target="_top"><%=subcategory.getName() %></a><br>
+		<a href="article?id=<%=subcategory.getId() %>" target="_top"><%=subcategory.getName() %></a><br>
 		<% } %>				
 		<% } %>
 	</div>
@@ -62,20 +62,20 @@
 				</a>
 			</div>
 			<div class="tutbuttons">
-				<a class="btn" href="css/default.asp" target="_top">текст</a>
-				<a class="btn" href="cssref/default.asp" target="_top">текст</a>			
+				<a class="btn" href="#" target="_top">текст</a>
+				<a class="btn" href="#" target="_top">текст</a>			
 			</div>
 		</div>
 		<div class="box1">
 			<div class="tutlogo">
-				<a class="box" href="js/default.asp" target="_top">		
+				<a class="box" href="#" target="_top">		
 					<div class="image" style="background-color:#555555;"></div>
 					<h1>Кат 1</h1>
 				</a>
 			</div>
 			<div class="tutbuttons">
-				<a class="btn" href="js/default.asp" target="_top">текст</a>
-				<a class="btn" href="jsref/default.asp" target="_top">текст</a>			
+				<a class="btn" href="#" target="_top">текст</a>
+				<a class="btn" href="#" target="_top">текст</a>			
 			</div>
 		</div>		
 		<div class="box1">
@@ -86,32 +86,32 @@
 				</a>
 			</div>
 			<div class="tutbuttons">
-				<a class="btn" href="sql/default.asp" target="_top">текст</a>
-				<a class="btn" href="sql/sql_quickref.asp" target="_top">текст</a>			
+				<a class="btn" href="#" target="_top">текст</a>
+				<a class="btn" href="#" target="_top">текст</a>			
 			</div>
 		</div>
 		<div class="box1">
 			<div class="tutlogo">
-				<a class="box" href="php/default.asp" target="_top">		
+				<a class="box" href="#" target="_top">		
 					<div class="image" style="background-color:#41BC81;"></div>
 					<h1>Кат 1</h1>
 				</a>
 			</div>
 			<div class="tutbuttons">
-				<a class="btn" href="php/default.asp" target="_top">текст</a>
-				<a class="btn" href="php/php_ref_array.asp" target="_top">текст</a>			
+				<a class="btn" href="#" target="_top">текст</a>
+				<a class="btn" href="#" target="_top">текст</a>			
 			</div>
 		</div>
 		<div class="box1">
 			<div class="tutlogo">
-				<a class="box" href="jquery/default.asp" target="_top">		
+				<a class="box" href="#" target="_top">		
 					<div class="image" style="background-color:#6A8CE9;"></div>
 					<h1>Кат 1</h1>
 				</a>
 			</div>
 			<div class="tutbuttons">
-				<a class="btn" href="jquery/default.asp" target="_top">текст</a>
-				<a class="btn" href="jquery/jquery_ref_selectors.asp" target="_top">текст</a>			
+				<a class="btn" href="#" target="_top">текст</a>
+				<a class="btn" href="#" target="_top">текст</a>			
 			</div>
 		</div>
 		<div style="clear:both;"></div>

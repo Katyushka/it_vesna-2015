@@ -29,6 +29,7 @@ public class UserModel {
 			String salt = getSalt();
 			String passwordHash = getMd5(password, salt);
 			UserDao userDao = new UserDaoImpl();
+			System.out.println(salt + " ----- "+passwordHash);
 			newUser = userDao.createUser(userName, passwordHash, salt);
 		} catch (NoSuchAlgorithmException e) {
 			e.printStackTrace();

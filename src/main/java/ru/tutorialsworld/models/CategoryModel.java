@@ -13,6 +13,11 @@ public class CategoryModel {
 		return categoryDao.getAllCategories();
 	}
 
+	public static Category getCategoryById(int categoryId){
+		CategoryDao categoryDao = new CategoryDaoImpl();
+		return categoryDao.getCategoryById(categoryId);
+	}
+	
 	public static List<Category> getSubcategories(Category parentCategory) {
 		List<Category> subcategories = new ArrayList<Category>();
 		for (Category category : getAllCategories()) {
